@@ -45,11 +45,20 @@ body {
     justify-content: space-between;
 }
 
+.content.disable{
+    cursor: no-drop;
+}
+
 .content .column{
     padding:0 10px;
     border-radius: 5px;
     border: 1px solid #bfbfbf;
     width: calc(100% / 3 - 5px) 
+}
+
+.content.disable .column{
+    opacity:0.6;
+    pointer-events: none;
 }
 
 .column select{
