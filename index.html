@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <img src="./files/3d-alarm.png" alt="clock">
         <h1>12:00:00 AM</h1>
-        <div class="select">
-            <select class="hour">
-                <option value="">Hour</option>
-                <option value="">01</option>
-                <option value="">02</option>
-            </select>
-            <select class="minute">
-                <option value="">Minute</option>
-                <option value="">01</option>
-                <option value="">02</option>
-            </select>
-            <select class="ampm">
-                <option value="">AM/PM</option>
-                <option value="">01</option>
-                <option value="">02</option>
-            </select>
+        <div class="content">
+            <div class="column">
+                <select>
+                    <option value="">Hour</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                </select>
+            </div>
+            <div class="column">
+                <select>
+                    <option value="">Minute</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                </select>
+            </div>
+            <div class="column">
+                <select>
+                    <option value="">AM/PM</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                </select>
+            </div>
         </div>
         <button>Set Alarm</button>
     </div>
